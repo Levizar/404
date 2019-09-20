@@ -9,6 +9,26 @@ body{
 
 .backimg{
     margin: 0;
-    grid-area: 1 / 1 / 13 / 13;
-    width:100%
+    padding: 0;
+    grid-area: 1 / 1 / 13 / 13 ;
+    width:100%;
+    opacity: 0.33;
+}
+
+.planet{
+    margin: 0;
+    padding: 0;
+    grid-area:  5 / 9 / 8 / 13 ;
+    width: 100%;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.nebula{
+    margin: 0;
+    padding: 0;
+    grid-area: 1 / 1 / 13 / 13 ;
+    opacity: 0.3;
+    width: 100%;
+    height: 100vh;
 }
