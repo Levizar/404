@@ -1,11 +1,11 @@
-body{
+.gradient{
     display: flex;
     margin: 0;
     width: 10Ovw;
     height: 100vh;
     background: rgb(183,42,209);
     background: linear-gradient(90deg, rgba(183,42,209,1) 0%, rgba(113,25,168,1) 51%, rgba(104,9,121,1) 100%, rgba(255,0,239,1) 100%) no-repeat;
-    z-index: 0;
+    z-index: 0;    
 }
 
 .nebula{
@@ -15,7 +15,7 @@ body{
     opacity: 0.3;
     width: 100%;
     height: 100vh;
-    background: url(nebula.jpg)no-repeat;
+    background: url(nebula.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     z-index: 1;
@@ -45,8 +45,57 @@ body{
     width: 100%;
     opacity: 0.8;
     z-index: 3;
+    animation: pulsate-bck 1.5s ease-in-out infinite both;
 }
 
+@keyframes pulsate-bck {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/* The empty class forces the bottom of the grid  */
 .empty{
     grid-area:  10 / 10 / 11 / 11 ;
+}
+
+p{    
+    color: inherit;
+    z-index: 4;
+    width: 20vw;
+    font-size: 15px;
+    margin: 0;
+    text-align: center; 
+}
+
+#yat{
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background: #28092ebb;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+    z-index: 4;
+}
+
+#comeback{
+    background: rgba(25, 156, 189, 0.9);
+    position: absolute;
+    bottom: 20%;
+    right: 40%;
+    padding: 10px;
+    z-index: 4;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background: #28092e;
+    opacity: 1;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
