@@ -99,3 +99,30 @@ p{
     opacity: 1;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
+
+#comeback:hover{
+    animation: wobble-hor-bottom 0.8s ease-in both
+}
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      transform: translateX(0%), translateY(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-30px) translateY(-6px) rotate(6deg);
+    }
+    30% {
+      transform: translateX(15px) translateY(-12px) rotate(-6deg);
+    }
+    45% {
+      transform: translateX(-15px) translateY(-18px) rotate(3.6deg);
+    }
+    60% {
+      transform: translateX(9px) translateY(-12px) rotate(-2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) translateY(-6px) rotate(1.2deg);
+    }
+  }
