@@ -1,7 +1,7 @@
 .gradient{
     display: flex;
     margin: 0;
-    width: 10Ovw;
+    width: 100vw;
     height: 100vh;
     background: rgb(183,42,209);
     background: linear-gradient(90deg, rgba(183,42,209,1) 0%, rgba(113,25,168,1) 51%, rgba(104,9,121,1) 100%, rgba(255,0,239,1) 100%) no-repeat;
